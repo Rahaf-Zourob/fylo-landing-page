@@ -1,73 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <meta name="description" content="Fylo stores your most important files in one secure location.Access them wherever you need, share and collaborate with friends,
+  family, and co-workers." />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <title>Fylo</title>
 </head>
+
 <body>
+  <header>
+    <div class="container flex">
+      <div class="logo header__logo">
+        <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+      </div>
+      <nav>
+        <ul class="flex">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section__margin">
+      <div class="container flex">
+        <div class="description files">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p class="describe">
+            Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.
+          </p>
+          <form class="flex">
+            <div class="email">
+              <input type="email" name="email" id="emailFistPage" placeholder="Enter an email.." />
+              <p class="error">Please check your email</p>
+            </div>
+            <button class="start" type="submit" value="submit">
+              Get Started
+            </button>
+          </form>
+        </div>
+        <div class="image">
+          <img src="/images/illustration-1.svg" alt="section image: files with people" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="desktop__bg curve__bg">
+        <img src="./images/bg-curve-desktop.svg" alt="desktop background" />
+      </div>
+      <div class="mobile__bg curve__bg">
+        <img src="./images/bg-curve-mobile.svg" alt="mobile background" />
+      </div>
+      <div class="productive">
+        <div class="container flex">
+          <div class="description">
+            <h2 class="navy">Stay productive, wherever you are</h2>
+            <div class="image__description">
+              <p class="describe__margin">
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
+              <p>
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required!
+              </p>
+              <div class="button">
+                <button class="btn__work" value="work" type="button">
+                  <span>See how Fylo works</span>
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="user__feedback">
+              <p>
+                <span class="quote">
+                  <i class="fa-solid fa-quote-left"></i>
+                </span>
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div class="user__information flex">
+                <div class="avatar">
+                  <img src="/images/avatar-testimonial.jpg" alt="user avatar" />
+                </div>
+                <div class="user__name">
+                  <strong> Kyle Burton </strong>
+                  <p>Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="./images/illustration-2.svg" alt="section image: files with people" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Features
-  Team
-  Sign In
-
-  All your files in one secure location, accessible anywhere.
-
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
-
-  Get Started
-
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
+    <section>
+      <div class="last__section">
+        <div class="container">
+          <div class="information__section flex">
+            <div class="info">
+              <h2>Get early access today</h2>
+              <p>
+                It only takes a minute to sign up and our free starter tier is
+                extremely generous. If you have any questions, our support
+                team would be happy to help you.
+              </p>
+            </div>
+            <form>
+              <div class="email">
+                <input type="email" name="email" id="emailLastSection" placeholder="example@example.com"
+                  aria-label="email to get start for free" />
+                <p class="error">Please check your email</p>
+              </div>
+              <button value="start" type="submit">
+                Get Started For Free
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="footer__content">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo-footer.svg" alt="fylo logo" />
+        </div>
+        <div class="company__information">
+          <ul class="contact">
+            <li>
+              <span><img src="./images/icon-phone.svg" alt="phone" /></span>
+              <p>Phone: +1-543-123-4567</p>
+            </li>
+            <li>
+              <span><img src="./images/icon-email.svg" alt="email" /></span>
+              <p>example@fylo.com</p>
+            </li>
+          </ul>
+          <div class="links">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="#"> Contact Us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="social__sites">
+            <ul class="social__media flex">
+              <li>
+                <a href="facebook.com" class="flex" aria-label="facebook link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="twitter.com" class="flex" aria-label="twitter link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="instagram.com" class="flex" id="instagram" aria-label="instagram link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
+
 </html>
