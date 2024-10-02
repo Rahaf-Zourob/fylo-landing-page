@@ -105,7 +105,7 @@ h2 {
 }
 
 header {
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 nav {
@@ -239,7 +239,7 @@ nav a {
 }
 
 .last__section {
-    padding: 5rem 0;
+    padding: 6rem 0;
     color: var(--light-grayish-blue);
     background: var(--desaturated-blue);
 }
@@ -262,7 +262,7 @@ nav a {
 }
 
 footer {
-    padding: 5rem 0 4rem;
+    padding: 5rem 0;
     color: var(--light-grayish-blue);
     background: var(--very-dark-blue);
 }
