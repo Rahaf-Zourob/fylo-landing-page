@@ -118,10 +118,6 @@ nav a {
     font-weight: var(--fw-regular);
 }
 
-.files {
-    align-self: self-start;
-}
-
 .files h1 {
     font-size: var(--fs-bold);
 }
